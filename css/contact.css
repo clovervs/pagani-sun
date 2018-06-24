@@ -1,0 +1,396 @@
+*{
+	/* 去掉浏览器默认样式 */
+	margin: 0;
+	padding: 0;
+	/* 去掉列表标签的修饰 */
+	list-style: none;
+}
+a{
+	/* 去掉a标签的下划线 */
+	text-decoration: none;
+}
+body{
+	background: #0f0f0f;
+}
+header{
+	height: 109px;
+	/* background-image:-webkit-linear-gradient(left,#0f0f0f,#2e2e2e); */
+	margin: 0 auto;
+	position: relative;
+}
+#texiao{
+	position: absolute;
+	top:100px;
+	left: 200px;
+	opacity: 0.3;
+}
+.head{
+	width: 974px;
+	height: 102px;
+	margin: 0 auto;
+	background: url('../img/logo-menu.png') no-repeat;
+	position: relative;
+}
+.logo{
+	display: block;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    /* background: green; */
+    margin-left: -100px;
+    width: 200px;
+    height: 100px;
+}
+.right{
+	width: 336px;
+	height: 25px;
+/* 	background: green; */
+	position: absolute;
+	top: 29px;
+	right: 0;
+}
+.righticon{
+	width:116px;
+	height: 25px;
+/* 	background: red; */
+	float: left;
+}
+.righticon a{
+	display: block;
+	width: 14px;
+	height: 14px;
+/* 	background: lightskyblue; */
+	float: left;
+	margin-top: 5.5px;
+	margin-left: 8px;
+}
+.righticon a:last-child{
+	margin-right: 0;
+}
+.wechat img{
+	width: 14px;
+	height: 14px;
+	display: block;
+}
+.weibo img{
+	width: 14px;
+	height: 14px;
+	display: block;
+}
+.youku img{
+	width: 14px;
+	height: 14px;
+	display: block;
+}
+.instagram img{
+	width: 14px;
+	height: 14px;
+	display: block;
+}
+.facebook img{
+	width: 14px;
+	height: 14px;
+	display: block;
+}
+.tanchu{
+	position: absolute;
+    z-index: 999;
+    top: 30px;
+    left: -93px;
+    display: none;
+}
+.tanchu img{
+	width: 200px;
+	height: 200px;
+}
+.wechat:hover .tanchu{
+	display: block;
+}
+.rightzi{
+	width:220px;
+	height: 25px;
+/* 	background: yellow; */
+	float: right;
+}
+.rightzi a{
+	display: block;
+	float: left;
+	margin-top: 5px;
+	margin-left: 7px;
+	font-size: 12px;
+	color: #888888;
+	border-left: 1px solid #888888;
+	padding-left: 10px;
+}
+.rightzi a:nth-child(2){
+	color: #cccccc;
+}
+/* 导航开始 */
+nav{
+	width: 975px;
+	height: 24px;
+	/* background: gold; */
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+nav li:hover{
+	background: #092e43;
+}
+nav li:hover .xiala{
+	display: block;
+}
+nav li:hover .xiala2{
+	display: block;
+}
+.xiala{
+	width: 200px;
+	display: none;
+    position: absolute;
+    z-index: 999;
+    top: 24px;
+    left: 70px;
+    margin: 0;
+    padding: 0;
+    border-top: solid 5px #144563;
+}
+.xiala li{
+	display: block;
+    position: relative;
+    width: 200px;
+    height: auto;
+    margin: 0;
+    padding: 0 10px;
+    background: #111;
+    opacity: 0.8;
+}
+.xiala li a{
+	width: 200px;
+    height: auto;
+	display: block;
+    margin: 0;
+ /*    padding: 7px 7px 7px 15px; */
+    border-bottom: solid 1px #333;
+    color: #ddd;
+    font-size: 11px;
+    line-height: 25px;
+    text-align: left;
+}
+.xiala2{
+	width: 200px;
+	display: none;
+    position: absolute;
+    z-index: 999;
+    top: 24px;
+    left: 210px;
+    margin: 0;
+    padding: 0;
+    border-top: solid 5px #144563;
+}
+.xiala2 li{
+	display: block;
+    position: relative;
+    width: 200px;
+    height: auto;
+    margin: 0;
+    padding: 0 10px;
+    background: #111;
+    opacity: 0.8;
+}
+.xiala2 li a{
+	width: 200px;
+    height: auto;
+	display: block;
+    margin: 0;
+ /*    padding: 7px 7px 7px 15px; */
+    border-bottom: solid 1px #333;
+    color: #ddd;
+    font-size: 11px;
+    line-height: 25px;
+    text-align: left;
+}
+nav li {
+    display:block;
+    width: 122px;
+    height: 24px;
+    margin-left: 70px;
+}
+nav li a {
+    display: block;
+    font-size: 12px;
+    color: #aaa;
+    text-align: center;
+    line-height: 24px;
+}
+nav li:last-child{
+	margin-right: 70px;
+}
+nav span{
+	width: 110px;
+}
+/* 导航结束 */
+/* 内容开始 */
+main{
+	width: 100%;
+	height: 100%;
+	/* background: red; */
+}
+/* banner开始 */
+.banner{
+    width: 950px;
+    height: 182px;
+    /* background: pink; */
+    margin: 0px auto;
+}
+.banner img{
+	width: 100%;
+    height: 182px;
+}
+/* banner结束 */
+section{
+	width: 100%;
+	height: 100%;
+}
+.box{
+	width: 950px;
+	height: 942px;
+/* 	background: yellow; */
+	margin: 0px auto;
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+.boxleft{
+	width: 260px;
+	height: 448px;
+	float: left;
+    padding: 20px 20px 30px;
+    border: solid 1px #333;
+    box-sizing: border-box;
+/* 	background: blue; */
+}
+.boxright{
+	width: 660px;
+	height: 882px;
+	float: right;
+	/* background: purple; */
+}
+.name{
+	width: 220px;
+	height: 17px;
+	font-size: 12px;
+	color: #aaa;
+	font-weight: bold;
+/* 	background: lightgoldenrodyellow; */
+	margin-bottom: 8px;
+	box-sizing: border-box;
+}
+input{
+	width: 205px;
+	margin-bottom: 20px;
+    padding: 7px;
+    background: #ccc;
+    box-sizing: border-box;
+}
+.input1{
+	width: 56px;
+	height: 41px;
+	color: #fff;
+	font-size: 12px;
+	background: #0e2d3f;
+	box-sizing: border-box;
+	margin-top: 10px;
+	padding: 12px 15px;
+	border:none;
+}
+.boxright h2{
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #aaa;
+    font-weight: bold;
+}
+.shanghai{
+	width: 660px;
+	height: 200px;
+	margin-bottom: 30px;
+/* 	background: lightskyblue; */
+}
+.lefttu{
+	width: 360px;
+	height: 200px;
+/* 	background: lightgreen; */
+	float: left;
+}
+.lefttu img{
+	width: 360px;
+	height: 200px;
+}
+.rightwenzi{
+	width: 270px;
+	height: 126px;
+/* 	background: lightsalmon; */
+	float: right;
+}
+.rightwenzi p{
+	color: #aaa;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.ditu{
+	color: #aaa;
+    font-size: 12px;
+	text-decoration: underline;
+}
+.ditu:hover{
+	color: #8993cc;
+}
+/* 内容结束 */
+/* 底部开始 */
+/* .jiange{
+	width: auto;
+	height: 100px;
+} */
+footer{
+	position: relative;
+	width: auto;
+    height: 100px;
+    position: relative;
+}
+.heng{
+	width: auto;
+	height: 1px;
+	text-align: center;
+}
+.footerbox{
+	position: relative;
+    margin: 0px auto;
+    padding: 20px;
+    width: 910px;
+    color: #888;
+    font-size: 11px;
+}
+.footleft{
+	margin-top: 20px;
+	float: left;
+}
+.footleft span{
+	font-size: 11px;
+	color: #888888;
+}
+.footright a{
+	margin-top: 20px;
+	float: right;
+}
+.footright a{
+	display:block;
+    margin-left: 10px;
+    color: #888;
+    font-size: 11px;
+}
+.footright a:hover{
+	display: block;
+	color: #bee5e3;
+}
+/* 底部结束 */
